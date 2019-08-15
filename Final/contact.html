@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+  <script src="jquery-1.11.3.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div class="toggle-wrap">
+      <span class="toggle-bar"></span>
+    </div>
+  <div id="menu">
+     <div class="box" id="left-menu">
+      <ul class="top-menu">
+        <li class="top-list" id="top-list-left">Menu</li>
+        <li class="left-li" ><a class="left-a" id="home" href="homepage.html">Home</a></li>
+        <li class="left-li"><a id="resume" href="cv.pdf">Resume</a> </li>
+        <li class="left-li" id="aboutme"><a class="left-a"  href="About me.html"> About Me</a></li>
+        <li class="left-li"><a class="left-a" href="homepage1.html#portfolio">Portfolio</a></li>
+        <li class="left-li"><a class="left-a" href="contact.html">Contact</a></li>
+      </ul>
+      <a id="email-link" href="mailto:fern.zx@gmail.com">
+       <div id="email">
+        <div id="email-text">click to send me an email</div>
+        <div id="email-img"></div>
+       </div>
+      </a>
+<!-- email contact part ends -->
+    </div>
+    <!-- left menu ends -->
+    <div class="box" id="right-menu">
+       <div id="slogan">
+         <div class="right-li" id="allabout">All about creativity
+         </div>
+         <div id="smilingface"></div>
+         <div class="right-li" id="andhappiness">and happiness</div>
+       </div>
+       <ul class="top-menu">
+        <li class="top-list" id="top-list-right">portfolio</li>
+        <li class="right-li" ><a class="right-a" href="blue.html">Blue Sky Art Studio</a></li>
+        <li class="right-li"><a class="right-a" href="bull.html">Bull Horn Hotpot</a></li>
+        <li class="right-li"><a class="right-a" id="cat-menu" href="cat.html">Meow Cat Rescue</a></li>
+        <li class="right-li"><a class="right-a" href="urban.html">Architectual / Urban Design</a></li>
+      </ul>
+      <div id="copyright">
+        <p>All rights retain to Fern Zhang @ 2019  --------</p>
+      </div>
+    </div>
+    <!-- right menu ends -->
+  </div><!-- menu div ends -->
+
+  <!-- 正文部分 -->
+<div id="container">
+  <div id="tel" class="frame">
+    <div id="tel-img" class="img"></div>
+    <p>+1 313 405 5130</p>
+  </div>
+  <div id="contactemail" class="frame">
+    <div id="contactemail-img" class="img"></div>
+    <a id="email-link" href="mailto:fern.zx@gmail.com">
+      <p>fern.zx@gmail.com</p>
+    </a>
+  </div>
+  <div id="social" class="frame">
+    <div id="social-img" class="img"></div>
+    <div id="facebook">
+      <a href="facebook.com/fern8341">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/fern-zhang-a49075168/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div id="linkin"></div>
+  </div>
+</div>
+
+
+
+
+
+  <script>
+  $('.toggle-wrap').on('click', function() {
+    $(this).toggleClass('active');
+    $('#menu').animate({height: 'toggle'}, 400);
+  });
+
+  $(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,629 @@
+html body {height 100% width 100%}
+*{
+  margin:0;
+  padding:0;
+}
+body{width: 100%;
+	height:auto;
+	background-image: url("Bu_background title.jpg");
+	background-size: 1200px 1200px;
+	background-repeat:repeat;
+	overflow-x:hidden;
+}
+.top-menu{
+  /*font-family: 'Open Sans'; Helvetica-Normal;*/
+  font-size: 35px;
+  list-style: none;
+  line-height: 1.6;
+  text-decoration: none;
+}
+#menu{
+  position: fixed;
+  height: 100vh;
+  width:100vw;
+  display:flex;
+  flex-direction: row;
+  z-index: 2;
+  display: none;
+  margin:0;
+  padding:0;
+  top:0;
+  min-width: 1800px;
+  }
+.box{
+  padding-top: 60px;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+#left-menu{
+  position:absolute; 
+  width:42%;
+  left:0;
+  margin-left:0;
+  background-color: #fdfffe;
+  text-align: left;
+  /*padding-left: 18%;*/
+  z-index: 100;
+  /*opacity: 0.3;*/
+      }
+.top-list{
+  font-family: pasajero; arial;
+  padding-bottom: 1.8em;
+  text-transform: uppercase;
+}
+#top-list-left{
+  font-size: 16px;
+  color: #191b1a;
+  letter-spacing: 0.3em;
+  padding-top: 5%;
+  margin-left: 50%;
+}
+li.left-li
+ {
+  margin-bottom: 0.4em;
+  margin-left: 50%;
+  }
+a.left-a:hover {
+  text-shadow:2px 2px #ffd6c7;
+}
+a.right-a:hover{
+  color:#f15a24;
+  font-weight:bold;
+}
+.left-a{
+  font-family: century gothic, sans-serif;
+  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 10em;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  color:#191b1a;
+}
+#resume {
+  background-color: #f15a24;
+  font-size: 0.6em;
+  color: #ededed;
+  font-family: century gothic, sans-serif;
+  font-weight: 500;
+  margin-left: -28%;
+  text-decoration: none;
+  padding: 4px;
+  letter-spacing: 0.05em;
+}
+#aboutme{
+  margin-top: -1.9em;
+  }
+#email{
+  height: 15%;
+  width: 50%;
+  margin-left:10%;
+  margin-top: 30%;
+  /*background-color: pink;*/
+}
+#email-text{
+  font-family: century gothic, sans-serif;
+  font-size: 0.9em;
+  color: #191b1a;
+  }
+#email-img{
+  margin-top:5%;
+  margin-left:0;
+  height: 95%;
+  /*border: black 2px solid;*/
+  background-image: url('email.png');
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#email-link{
+  text-decoration:none;
+}
+#right-menu{
+  position:absolute;
+  width:58%;
+  right:0;
+  background-color:#191b1a;
+  /*opacity: 0.2;*/
+  text-align: left;
+  /*padding-left: 0;*/
+  z-index: 150;
+  }
+#copyright{
+  position:absolute;
+  top:50%;
+  right:5%;
+  width: 2%;
+  height:40%;
+  text-align:center;
+  writing-mode: vertical-rl;
+  font-family: century gothic, sans-serif;
+  font-size: 0.8em;
+  color:white;
+  /*background-color:pink;*/
+}
+#slogan{
+  position:absolute;
+  margin-top:-20px;
+  margin-left:40%;
+  /*background-color: pink;*/
+  height: 5%;
+  width: 60%;
+  font-size: 1.5em;
+}
+#allabout, #smilingface, #andhappiness{
+  display:inline-block;
+  margin-left:0;
+  margin-bottom:0;
+  height:100%;
+  text-align:center;
+}
+
+#allabout{
+  width:35%;
+  /*background-color: red;*/
+ }
+#smilingface{
+  width:15%;
+  height: 120%;
+  background-image: url("Smiling face on overlay menu.png");
+  /*background-color: pink;*/
+  background-position:center,center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-bottom: -2%;
+}
+#andhappiness{
+  width:30%;
+  /*background-color:yellow;*/
+}
+#top-list-right {
+  padding-top: 28%;
+  margin-left: 18%;
+  margin-bottom: -3%;
+  font-family: pasajero;
+  color:white;
+  letter-spacing: 0.4em;
+  font-size: 0.9em;
+}
+.right-li{
+/*background-color: orange;*/
+margin-left: 18%;
+font-size: 0.9em; 
+color: white;
+letter-spacing:0.05em;
+font-family: century gothic, sans-serif;
+}
+.right-a{
+  font-family: century gothic, sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 0.05em;
+  text-decoration: capitalize;
+  text-decoration: none;
+  color:#ededed;
+}
+#cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  border:none;
+  position:relative;
+  /*margin-top:0;*/
+  box-sizing: border-box;
+    }
+.toggle-wrap {
+    background-color:#191b1a;
+    position:absolute;
+    width: 60px;
+    height: 40px;
+    right: 0;
+    top: 100px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 50;
+    padding: auto;
+      }
+.toggle-bar{
+  width: 38px;
+  height: 3px;
+  display:block;
+  margin: 18px 11px;
+  position: relative;
+  border-top: 3px solid #fff;
+    }
+
+.toggle-bar::before,
+.toggle-bar::after {
+  content: "";
+  display: block;
+  background: #fff;
+  height: 3px;  
+  width: 38px;
+  position: absolute;
+  top: -12px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: 13%;
+  -webkit-transform-origin: 13%;
+  transform-origin: 13%;
+}
+.toggle-bar::after {
+  top: 7px;
+}
+.toggle-wrap.active .toggle-bar {
+  border-top: 4px solid transparent;
+}
+.toggle-wrap.active .toggle-bar::before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.toggle-wrap.active .toggle-bar::after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.back-to-top{
+	width:60px;
+	height:40px;
+	/*font-size: 22px;
+	text-align: center center;
+	font-family: 'Gothic A1', sans-serif;*/
+	background-color:#191b1a;
+	position:fixed;
+	bottom:100px;
+	padding:auto;
+	right:0;
+	/*text-align: center;
+	background-color: white;*/
+	/*-webkit-box-shadow: 0px 11px 5px -8px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 11px 5px -8px rgba(0,0,0,0.66);
+     box-shadow: 0px 11px 5px -8px rgba(0,0,0,0.66);*/
+}
+.back-to-top:hover {
+  cursor: pointer;
+}
+i{
+	color:white;
+	padding-left:23%;
+	padding-top: 5%;
+}
+#title{
+	width:900px;
+	height:105px;
+	background-image: url("BU_TITLE.png");
+	background-size:contain;
+	/*opacity:0.7;*/
+	background-repeat:no-repeat;
+	margin-left:12%;
+	margin-top:5%;
+	overflow: hidden;
+}
+#banner{
+	width:84%;
+	height:1000px;
+	margin-top:-5%;
+	margin-left:8%;
+	background-image:url("Bu_cover.png");
+	background-size:contain;
+	background-position:top;
+	background-repeat:no-repeat;
+	display:block;
+	/*background-color:yellow;*/
+	min-width: 800px;
+}
+.border{
+	border:10px white solid;
+	box-sizing:border-box;
+	-webkit-box-shadow: 11px 13px 5px -8px rgba(0,0,0,0.37);
+    -moz-box-shadow: 11px 13px 5px -8px rgba(0,0,0,0.37);
+    box-shadow: 11px 13px 5px -8px rgba(0,0,0,0.37);
+}
+/* @media only screen and (max-width: 800px) {
+  .border{
+   width: 84%;
+   margin-left:8%;
+   margin-top:15px;
+  }*/
+
+#intro{
+	width:100%;
+	height:400px;
+	position:relative;
+	margin-top:-150px;
+	min-width: 1200px;
+}
+#intro_left{
+	background-color:#333333;
+	width:35%;
+	height:400px;
+    margin-left:8%;
+    display:block;
+    position:absolute;
+    text-align: left;
+    padding-top:3%;	
+    padding-left:4%;
+    padding-right:4%;
+    float:left;
+    }
+#intro-right{
+	width:48%;
+	height:400px;
+	background-color:#333333;
+	position:absolute;
+	float:left;
+	margin-left:44%;
+	padding-left:4%;
+	padding-top:2%;
+	padding-right:4%;
+	}
+.h2{
+	color:white;
+	font-size:45px;
+	font-family: 'Fjalla One', sans-serif;
+	padding-bottom:10%;
+	letter-spacing: 1.5px;
+}
+.p{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
+	line-height: 1.6;
+	letter-spacing:1.5px;
+	padding-bottom:30px;
+}
+.white-p{
+	color:#666666;
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
+	line-height: 1.6;
+	letter-spacing:1.5px;
+	padding-bottom:30px;
+}
+.step_title{
+	width:45%;
+	/*opacity:0.7;*/
+	height:200px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	position:relative;
+	margin-top:100px;
+}
+.container{
+	width:100%;
+	height:auto;
+	position:relative;
+	min-width: 1200px;
+}
+#step1{
+	width:60%;
+	height:70px;
+	background-image: url("Bu_DESIGN STEPS Titles.png");
+	margin-left:60%;
+}
+#designstep-text{
+	margin-left:8%;
+	width:84%;
+	height:300px;
+	background-color:#f2f2f2;
+	padding-top:3%;
+	padding-left:7%;
+	padding-right:7%;
+	padding-bottom:2%;
+}
+#designstep-pic{
+	width:84%;
+	height:500px;
+	margin-left:8%;
+	margin-top:15px;
+	background-image:url("Bu_design step.png");
+	background-size: contain;
+	background-repeat:no-repeat;
+	background-position:top;
+	padding-left:3%;
+	display:block;
+	/*position:absolute;*/
+}
+#step2{
+	/*margin-top:180px;*/
+	margin-left:10%;
+	height:70px;
+	width:40%;
+	background-image: url("Bu_COMPETITOR ANALYSIS Titles.png");
+	/*position:absolute;*/
+}
+#competitor-analysis-text{
+	margin-left:8%;
+	width:84%;
+	height:300px;
+	background-color:#333333;
+	padding-top:3%;
+	padding-left:7%;
+	padding-right:7%;
+	padding-bottom:2%;
+	/*position:absolute;*/
+	/*opacity:0.1;*/
+}
+#competitor-analysis-pic{
+	margin-left:8%;
+	margin-top:15px;
+	width:84%;
+	height:700px;
+	background-image: url("Bull_Competitor.png");
+	background-size:contain;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-color:#333333;
+}
+#competitor-starbucks{
+	margin-left:8%;
+	margin-top:15px;
+	width:84%;
+	height:800px;
+	background-image: url("Bu_starbucks.png");
+	background-size:cover;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-color:#333333;
+}
+.division{
+	width:25%;
+	height:75%;
+	margin-top:5%;
+	background-size:contain;
+	background-position:center center;
+	display:block;
+}
+#step3{
+	margin-left:40%;
+	height:70px;
+	width:40%;
+	background-image: url("Bu_CUSTOMER RESEARCH title.png");
+}
+#customer-research-text{
+	width:30%;
+	height:700px;
+	margin-left:8%;
+	padding-top:5%;
+	padding-left:2%;
+	padding-right:2%;
+	background-color:#f2f2f2;
+	float:left;
+	/*margin-top:-5%;*/
+	}
+#customer-research-pic{
+	width:53%;
+	margin-left:39%;
+	height:700px;
+	background-image:url("Bu_user goal identity.png");
+	background-size: contain;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-position: center center;
+	padding-left:5%;
+	/*margin-top:-260px;*/
+}
+#step4{
+	margin-left:60%;
+	height:70px;
+	width:30%;
+	background-image: url("Bu_USER FLOW title.png");
+}
+#userflow-text{
+	margin-left:8%;
+	width:84%;
+	height:200px;
+	background-color:#333333;
+	padding-top:3%;
+	padding-left:7%;
+	padding-right:7%;
+	padding-bottom:2%;
+}
+#userflow-pic{
+	width:84%;
+	height:900px;
+	margin-top:15px;
+	margin-left:8%;
+	background-image:url("Bu_Placing an order user flow.png");
+	background-size:85%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	display:block;
+	background-color:white;
+	min-width: 800px;
+	padding-top:15%;
+	padding-left:5%;
+	padding-right:5%;
+}
+#step5{
+	height:70px;
+	width:30%;
+	background-image: url("Bu_Visual Design Titles.png");
+}
+#visusal-design-text{
+	margin-left:8%;
+	width:84%;
+	height:180px;
+	background-color:#333333;
+	padding-top:3%;
+	padding-left:7%;
+	padding-right:7%;
+	padding-bottom:3%;
+}
+#visual-design-pic{
+	margin-left:8%;
+	margin-top:15px;
+	width:84%;
+	height:900px;
+	background-image: url("Bull_multiple pages showcase.png");
+	background-size:cover;
+	background-position: center center;
+	background-repeat:no-repeat;
+}
+#visual-mockup{
+	margin-left:8%;
+	margin-top:15px;
+	width:84%;
+	height:900px;
+	background-image: url("Bu_iphone on black table.png");
+	background-size:cover;
+	background-position: center center;
+	background-repeat:no-repeat;
+}
+#step6{
+    margin-left:40%;
+	height:70px;
+	width:60%;
+	background-image: url("Bu_PRINT DESIGN TITLE.png");
+}
+#logo{
+	width:84%;
+	margin-left:8%;
+	height:800px;
+	background-image:url("Bu_Elegant Crafty Logo Mockup .png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+#menu-detail{
+	height:700px;
+	margin-top:15px;
+}
+#menu-pic{
+	width:41.5%;
+	margin-left:8%;
+	height:700px;
+	background-image:url("Bu_lunch menu in mockup.png");
+	background-size:contain;
+	background-position:center center;
+	float:left;
+}
+
+#menu-1{
+	width:41.5%;
+	/*margin-top:15px;*/
+	margin-left:50.5%;
+	height:700px;
+	background-image:url("Bu_Lunch Menu detail-1.png");
+	background-size:cover;
+	background-position:center center;
+}
+
+#menu-2{
+	width:84%;
+	margin-left:8%;
+	margin-top:15px;
+	height:900px;
+	background-image:url("Bu_Lunch Menu detail-2.png");
+	background-size:cover;
+	background-position:center center;
+}
+#bottom{
+	height:50px;
+	width:100%;
+	opacity:0;
+}
